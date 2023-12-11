@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+}
+
+/* .box:first-child {
+    width: 400px;
+    height: 400px;
+}
+
+.box:last-child {
+    width: 100px;
+    height: 100px;
+}
+
+.box:nth-child(3) {
+    width: 600px;
+    height: 600px;
+} */
+
+.box:nth-of-type(odd) {
+    width: 400px;
+    height: 400px;
+}
+
+.box1 {
+    background-color: blue;
+}
+
+.box2 {
+    background-color: green;
+}
+
+.box3 {
+    background-color: red;
+}
+
+.box4 {
+    background-color: magenta;
+}
+
+.box5 {
+    background-color: brown;
+}
+
+.box6 {
+    background-color: yellowgreen;
+}

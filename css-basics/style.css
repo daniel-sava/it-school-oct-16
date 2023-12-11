@@ -1,0 +1,83 @@
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+h1 {
+    color: blue;
+}
+
+#title {
+    color: turquoise;
+    width: 100px;
+}
+
+.main-title {
+    color: magenta;
+}
+
+/* Varianta 1 de suprascriere - NEVERRRRR!!!!! */
+/* h1 {
+    color: orange !important;
+} */
+
+/* Varianta 2 de suprascriere */
+h1.main-title.pink-title#title {
+    color: greenyellow;
+    font-size: 72px;
+    font-weight: bold;
+    width: 400px;
+}
+
+.box1 {
+    border: 10px solid red;
+
+    /* padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    padding-left: 50px; */
+
+    /* padding: 20px 40px 30px 50px; */
+    padding: 40px 80px 200px;
+
+    /* margin-top: 30px;
+    margin-right: 50px;
+    margin-bottom: 200px;
+    margin-left: 40px; */
+
+    /* margin: 30px 50px 200px 40px; */
+    margin: 200px 50px 400px;
+}
+
+.box2 {
+    background-color: blue;
+    height: 500px;
+}
+
+.title {
+    color: red;
+}
+
+.sectiunea2 .title {
+    color: blue;
+    font-size: 90px;
+    font-weight: 100;
+    width: 250px;
+}
+
+.sectiunea2 .title span {
+    color: black;
+    font-size: 16px;
+}
+
+.sectiunea2.special .title {
+    color: pink;
+}

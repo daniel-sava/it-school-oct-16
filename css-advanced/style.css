@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #d89b29;
+    --secondary-color: #e7782e;
+    --light-color: #edeceb;
+    --dark-color: #1e1f24;
+    --overlay-gradient: linear-gradient(0deg, #1e1f24cf, #1e1f24cf);
+    --huge-font: 3.25rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+#hero {
+    background-image: var(--overlay-gradient),
+        url("./assets/hero-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 9rem 1.5rem;
+}
+
+#hero .container {
+    margin: 0 auto;
+    max-width: 65rem;
+    text-align: center;
+}
+
+#hero .title {
+    font-size: var(--huge-font);
+    color: var(--light-color);
+    margin-bottom: 1.5rem;
+}
+
+#hero .description {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    margin-bottom: 1rem;
+}
+
+#hero .description::first-line {
+    text-transform: uppercase;
+}
+
+#hero .description::first-letter {
+    /* color: var(--primary-color); */
+    font-size: 5rem;
+}
+
+#hero .description::before {
+    content: "'";
+    color: var(--primary-color);
+    font-size: 5rem;
+}
+
+#hero .description::after {
+    content: "'";
+    color: var(--primary-color);
+    font-size: 5rem;
+}
+
+#hero .cta {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#hero .cta:hover {
+    background-color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+#test .button {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    color: var(--dark-color);
+}
+
+@media (max-width: 1000px) {
+    #hero .title {
+        font-size: 2.5rem;
+    }
+
+    #hero .description {
+        font-size: 1.125rem;
+    }
+
+    #hero .cta {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    #hero .title {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    #hero .cta {
+        background-color: var(--secondary-color);
+    }
+}
+
+@media (max-width: 500px) {
+    #hero .description {
+        /* display: none; */
+        /* opacity: 0; */
+        visibility: hidden;
+    }
+}
