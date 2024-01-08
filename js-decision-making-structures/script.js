@@ -47,7 +47,6 @@ switch (studentGrade) {
         break;
     default:
         console.log("Esti respins");
-        break;
 }
 
 if (studentGrade === 10) {
