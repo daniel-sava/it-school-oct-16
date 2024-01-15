@@ -1,5 +1,10 @@
 const numbers = [-1, 74, 2, -20, 10, 204, 86, 73, 90];
 
+/**
+ * Tema:
+ * Faceti functia bubble sort sa poata sorta atat crescator, cat si descrescator
+ */
+
 function bubbleSort(numbers) {
     for (let i = 0; i < numbers.length; i++) {
         for (let j = 0; j < numbers.length - i - 1; j++) {
