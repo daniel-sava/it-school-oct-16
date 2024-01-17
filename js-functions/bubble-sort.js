@@ -64,3 +64,5 @@ numeFunctie(person);
 arrowFunction(person);
 
 console.log(person);
+
+console.log(Math.ceil(Math.random() * 4));
