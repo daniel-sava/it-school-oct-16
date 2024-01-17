@@ -40,3 +40,20 @@ const text = `Hello! ${person.name}! You are ${person.age} years old. The result
 
 // window.alert();
 // window.prompt("Enter your name", "Name");
+
+console.log(Math.ceil(Math.random() * 95));
+
+const dictionar = ["a", "b", "c", "d", "e", "X", "H", "L", 1, 6, 8, 5, 2];
+
+function generateRandomPassword(length) {
+    let password = "";
+
+    while (password.length < length) {
+        const index = Math.ceil(Math.random() * (dictionar.length - 1));
+        password = password + dictionar[index];
+    }
+
+    return password;
+}
+
+console.log(generateRandomPassword(10));
