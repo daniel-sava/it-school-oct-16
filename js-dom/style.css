@@ -1,0 +1,15 @@
+.rectangle {
+    background-color: red;
+    width: 300px;
+    height: 150px;
+}
+
+.rectangle-style-1 {
+    border-radius: 2rem;
+    border: 2px solid black;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.rectangle .title {
+    color: blue;
+}
