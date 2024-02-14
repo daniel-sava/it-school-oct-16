@@ -1,0 +1,78 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.buttons button {
+    outline: inherit;
+    border: none;
+    cursor: pointer;
+    padding: 1rem 0.75rem;
+    border-radius: 0.25rem;
+}
+
+#refresh {
+    background-color: #116864;
+    color: white;
+}
+
+#clear {
+    background-color: #ba0003;
+    color: white;
+}
+
+#joke {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+#joke img {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+}
+
+#joke p {
+    font-size: 2rem;
+    font-weight: bold;
+    max-width: 420px;
+    text-align: center;
+    color: #116864;
+}
+
+#jokes-history {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#jokes-history div {
+    background-color: #116864;
+    max-width: 320px;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#jokes-history div img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+
+#jokes-history p {
+    color: white;
+}
