@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #5448c8;
+    --secondary-color: #fea82f;
+    --dark-color: #423e3b;
+    --light-color: #fffecb;
+    --error-color: ##ff2e00;
+    --background-color: #1a1a1a;
+    --primary-font: "Fredoka", sans-serif;
+    --secondary-font: "Quicksand", sans-serif;
+}
+
+body {
+    padding: 1rem 2rem;
+    font-family: var(--primary-font);
+    background-color: var(--background-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+nav #board-name {
+    border: 3px solid var(--primary-color);
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 12rem;
+    color: var(--light-color);
+    font-size: 1.25rem;
+    padding: 0.25rem 0.75rem;
+}
+
+main {
+    margin-top: 4rem;
+}
+
+main #board-title {
+    color: var(--light-color);
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+main .columns {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+main .columns #column-name {
+    border: 3px solid var(--primary-color);
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0.5rem;
+    height: 1.75rem;
+    width: 12rem;
+    color: var(--light-color);
+    font-size: 1rem;
+    padding: 0.25rem 0.75rem;
+}
+
+main .columns #column-add {
+    all: unset;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+}
+
+main .columns #column-add:hover {
+    cursor: pointer;
+}
+
+main #board {
+    border: 1px dashed var(--light-color);
+    border-radius: 1rem;
+    min-height: 10rem;
+}
