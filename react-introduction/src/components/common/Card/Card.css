@@ -21,3 +21,17 @@
 .product-button:hover {
     background-color: rgb(63, 23, 101);
 }
+
+.product-offer {
+    background-color: red;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+
+.product-offer:hover {
+    background-color: rgb(161, 20, 20);
+}

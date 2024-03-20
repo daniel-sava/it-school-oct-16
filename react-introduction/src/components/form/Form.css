@@ -1,0 +1,19 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.form-container input {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.form-container button {
+    background-color: blue;
+    padding: 1rem 2rem;
+    color: white;
+}
