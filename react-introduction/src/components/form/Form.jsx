@@ -7,10 +7,17 @@ export default function Form() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isValid, setIsValid] = useState(false);
 
     useEffect(() => {
         console.log({ firstName, lastName, email, password });
     }, [isSubmitted]);
+
+    useEffect(() => {
+        if (email.includes("@")) {
+            setIsValid(true);
+        }
+    }, [email]);
 
     return (
         <>
@@ -18,13 +25,19 @@ export default function Form() {
                 <div className="form-container">
                     <input type="text" placeholder="Prenume" onChange={(event) => setFirstName(event.target.value)} />
                     <input type="text" placeholder="Nume" onChange={(event) => setLastName(event.target.value)} />
-                    <input type="email" placeholder="Email" onChange={(event) => setEmail(event.target.value)} />
+                    <input type="email" required onChange={(event) => setEmail(event.target.value)} />
                     <input
                         type="password"
                         placeholder="Password"
                         onChange={(event) => setPassword(event.target.value)}
                     />
-                    <button onClick={() => setIsSubmitted(true)}>Submit</button>
+                    <button
+                        className={!isValid ? "disabled" : ""}
+                        disabled={!isValid}
+                        onClick={() => setIsSubmitted(true)}
+                    >
+                        Submit
+                    </button>
                 </div>
             ) : (
                 <h1>Formularul a fost trimis cu succes!</h1>

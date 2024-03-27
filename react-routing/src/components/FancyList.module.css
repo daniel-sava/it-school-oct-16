@@ -1,0 +1,10 @@
+.list {
+    margin: 5rem;
+    padding: 2rem;
+    border: 2px solid blue;
+}
+
+.listContainer {
+    margin: 2rem;
+    border: 2px solid red;
+}

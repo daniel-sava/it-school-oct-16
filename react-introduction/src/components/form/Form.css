@@ -17,3 +17,7 @@
     padding: 1rem 2rem;
     color: white;
 }
+
+.form-container button.disabled {
+    background-color: grey;
+}

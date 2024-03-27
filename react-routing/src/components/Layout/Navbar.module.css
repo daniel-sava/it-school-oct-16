@@ -1,0 +1,22 @@
+.navbar {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+}
+
+.logo {
+    color: white;
+    font-size: 4rem;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
